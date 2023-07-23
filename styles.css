@@ -1,0 +1,171 @@
+body,
+html {
+  font-family: Arial, sans-serif;
+  background-color: #dbf0b0;
+  /* color: #fff; */
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+h2 {
+  font-size: 1em;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #9b5a34;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #a480f1;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.heading {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.search-box {
+  padding: 10px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 10px;
+  gap: 10px;
+  align-items: center;
+}
+
+.pagination {
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  margin: 25px;
+  gap: 5px;
+  align-items: center;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.movie-details {
+  display: flex;
+  margin: 20px;
+  padding: 15px;
+}
+
+.movie-detail-heading {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-detail-detail {
+  display: flex;
+  flex-direction: column;
+  margin: 55px;
+  gap: 10px;
+  max-width: 600px;
+}
+
+.movie-item {
+  margin: 0 10px;
+  margin-bottom: 15px;
+  width: 13%;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.movie-poster {
+  border: 5px solid #5a4040;
+  border-radius: 10px;
+  height: 60%;
+  width: 100%;
+}
+
+.movie-title {
+  font-size: 0.85em;
+  font-weight: 700;
+}
+
+.movie-year {
+  font-size: 0.85em;
+  color: #919191;
+}
+
+rating {
+  font-size: 24px;
+}
+
+.rating span {
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.1s;
+}
+
+.rating span:hover,
+.rating span.rated {
+  color: gold;
+}
+
+user-input {
+  display: flex;
+}
+
+user-comments {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  width: 25px;
+}
+
+@media only screen and (max-width: 767px) {
+  .movie-details {
+    flex-wrap: wrap;
+    align-items: left;
+  }
+
+  .movie-detail-detail {
+    margin: 20px 0;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .movie-item {
+    width: 40%;
+  }
+}
